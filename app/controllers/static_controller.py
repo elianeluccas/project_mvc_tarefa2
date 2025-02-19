@@ -1,7 +1,7 @@
-from flask import Blueprint, render_template
+# app/controllers/static_controller.py
+from flask import render_template
 
-static_bp = Blueprint('static_pages', __name__)
-
-@static_bp.route('/')
-def index():
-    return render_template('index/index.html')
+class StaticController:
+    @staticmethod
+    def index():
+        return render_template("index.html")

@@ -1,6 +1,12 @@
-class Problema:
-    def __init__(self, descricao):
-        self.descricao = descricao
+# app/models/problema.py
 
-    def resolver(self, entrada):
-        return f"Resultado do problema para entrada {entrada}"
+class Problema:
+    def __init__(self, enunciado, resposta):
+        self.enunciado = enunciado
+        self.resposta = resposta
+
+    def get_enunciado(self):
+        return self.enunciado
+
+    def get_resposta(self):
+        return self.resposta
